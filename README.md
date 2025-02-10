@@ -1,4 +1,4 @@
-# Pokémon Emerald
+# Pokémon Emerald - Hyo
 
 This is a decompilation of Pokémon Emerald.
 
