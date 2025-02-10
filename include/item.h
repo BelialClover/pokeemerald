@@ -7,6 +7,8 @@
 
 typedef void (*ItemUseFunc)(u8);
 
+void ItemId_GetHoldEffectParam_Script(); //Prompt for reusing Repels
+
 struct Item
 {
     u8 name[ITEM_NAME_LENGTH];
