@@ -99,4 +99,9 @@ enum
 #undef ENUM_TM
 #undef ENUM_HM
 
+//tx_randomizer_and_challenges
+u16 RandomItemId(u16 itemId);
+u16 RandomItem(void);
+u16 RandomItemHidden(void);
+
 #endif // GUARD_ITEM_H
