@@ -29,6 +29,7 @@
 #include "menu.h"
 #include "money.h"
 #include "mystery_event_script.h"
+#include "outfit_menu.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "pokemon_storage_system.h"
@@ -2412,7 +2413,65 @@ bool8 ScrFunc_hidefollower(struct ScriptContext *ctx) {
     // from hiding the follower again
     if (obj)
         FlagSet(FLAG_SAFE_FOLLOWER_MOVEMENT);
-
     // execute next script command with no delay
+}
+
+bool8 ScrCmd_toggleoutfit(struct ScriptContext *ctx)
+{
+    u16 outfitId = VarGet(ScriptReadHalfword(ctx));
+    u8 type = ScriptReadByte(ctx);
+
+    switch(type)
+    {
+    default:
+    case OUTFIT_TOGGLE_UNLOCK:
+        UnlockOutfit(outfitId);
+        break;
+    case OUTFIT_TOGGLE_LOCK:
+        LockOutfit(outfitId);
+        break;
+    }
+    return TRUE;
+}
+
+bool8 ScrCmd_getoutfitstatus(struct ScriptContext *ctx)
+{
+    u16 outfitId = VarGet(ScriptReadHalfword(ctx));
+    u8 data = ScriptReadByte(ctx);
+
+    switch(data)
+    {
+        default:
+        case OUTFIT_CHECK_FLAG:
+            ctx->comparisonResult = GetOutfitStatus(outfitId);
+            break;
+        case OUTFIT_CHECK_USED:
+            ctx->comparisonResult = IsPlayerWearingOutfit(outfitId);
+            break;
+    }
+    return TRUE;
+}
+
+bool8 ScrCmd_bufferoutfitstr(struct ScriptContext *ctx)
+{
+    u8 strVarIdx = ScriptReadByte(ctx);
+    u16 outfit = VarGet(ScriptReadHalfword(ctx));
+    u8 type = ScriptReadByte(ctx);
+
+    BufferOutfitStrings(sScriptStringVars[strVarIdx], outfit, type);
+    return TRUE;
+}
+
+bool8 ScrCmd_pokemartoutfit(struct ScriptContext *ctx)
+{
+    const void *ptr = (void *)ScriptReadWord(ctx);
+
+    #ifdef MUDSKIP_SHOP_UI
+    NewShop_CreateOutfitShopMenu(ptr);
+    #else
+    CreateOutfitShopMenu(ptr);
+    #endif // MUDSKIP_SHOP_UI
+
+    ScriptContext_Stop();
     return TRUE;
 }

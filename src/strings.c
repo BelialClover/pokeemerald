@@ -348,7 +348,9 @@ const u8 gText_Var1CertainlyHowMany2[] = _("{STR_VAR_1}? Certainly.\nHow many wo
 const u8 gText_Var1AndYouWantedVar2[] = _("{STR_VAR_1}? And you wanted {STR_VAR_2}?\nThat will be ¥{STR_VAR_3}.");
 const u8 gText_Var1IsItThatllBeVar2[] = _("{STR_VAR_1}, is it?\nThat'll be ¥{STR_VAR_2}. Do you want it?");
 const u8 gText_YouWantedVar1ThatllBeVar2[] = _("You wanted {STR_VAR_1}?\nThat'll be ¥{STR_VAR_2}. Will that be okay?");
+const u8 gText_YouWantedVar1OutfitThatllBeVar2[] = _("You wanted that {STR_VAR_1} OUTFIT?\nThat'll be ¥{STR_VAR_2}. Will that be okay?");
 const u8 gText_HereYouGoThankYou[] = _("Here you go!\nThank you very much.");
+const u8 gText_HereIsTheOutfitThankYou[] = _("Here is the OUTFIT!\nThank you very much.");
 const u8 gText_ThankYouIllSendItHome[] = _("Thank you!\nI'll send it to your home PC.");
 const u8 gText_ThanksIllSendItHome[] = _("Thanks!\nI'll send it to your PC at home.");
 const u8 gText_YouDontHaveMoney[] = _("You don't have enough money.{PAUSE_UNTIL_PRESS}");
@@ -1829,3 +1831,6 @@ const u8 gText_NuzlockeCantThrowPokeBallSpeciesClause[]     = _("You have alread
 const u8 gText_NuzlockeCantThrowPokeBallAlreadyCaught[]     = _("You have already caught this POKéMON!{PAUSE_UNTIL_PRESS}");
 const u8 gText_OneTypeChallengeCantThrowPokeBall[]          = _("One Type Challenge active, capture blocked!{PAUSE_UNTIL_PRESS}");
 const u8 gText_BattleRules_NoItems_Player[]                 = _("Competitive rules!\nNo items in battle!{PAUSE_UNTIL_PRESS}");
+
+const u8 gText_ThatOutfitIsSoldOut[] = _("I'm sorry, but that OUTFIT is sold out.{PAUSE_UNTIL_PRESS}");
+const u8 gText_SoldOut[] = _("SOLD OUT");

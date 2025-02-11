@@ -13,6 +13,7 @@
 #include "field_poison.h"
 #include "field_screen_effect.h"
 #include "field_specials.h"
+#include "field_weather.h"
 #include "fldeff_misc.h"
 #include "item_menu.h"
 #include "link.h"
@@ -129,6 +130,7 @@ void FieldGetPlayerInput(struct FieldInput *input, u16 newKeys, u16 heldKeys)
         input->dpadDirection = DIR_WEST;
     else if (heldKeys & DPAD_RIGHT)
         input->dpadDirection = DIR_EAST;
+
 }
 
 int ProcessPlayerFieldInput(struct FieldInput *input)

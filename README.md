@@ -1,4 +1,4 @@
-# Pokémon Emerald
+# pokeemerald: Outfits System
 
 This is a fork of the [matching decompilation](https://github.com/pret/pokeemerald) at [PRET](https://github.com/pret).
 
@@ -51,7 +51,7 @@ Additional branches to mention:
 
 * `lighting-expanded-id` - like the above but for `lighting`.
 
-To set up the repository, see [INSTALL.md](INSTALL.md).
+Note that this feature branch is still missing some of the features that's necessary, such as the ability to purchase outfits. So, stay tune for more until then!
 
 **guillotine** branch:
 * ~~Decapitates~~ Decapitalizes **all** text at runtime, with some exceptions (see the [FAQ](#guillotine-q-how-can-i-keep-my-strings-from-being-decapped))

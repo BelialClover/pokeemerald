@@ -56,7 +56,6 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_YELLOW_SHARD] = {gItemIcon_Shard, gItemIconPalette_YellowShard},
     [ITEM_GREEN_SHARD] = {gItemIcon_Shard, gItemIconPalette_GreenShard},
     // ????????
-    [ITEM_034] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_035] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_036] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     [ITEM_037] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
@@ -401,6 +400,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     // Emerald-only key items
     [ITEM_MAGMA_EMBLEM] = {gItemIcon_MagmaEmblem, gItemIconPalette_MagmaEmblem},
     [ITEM_OLD_SEA_MAP] = {gItemIcon_OldSeaMap, gItemIconPalette_OldSeaMap},
+    [ITEM_OUTFIT_BOX] = {gItemIcon_OutfitBox, gItemIconPalette_OutfitBox},
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };
