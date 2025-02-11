@@ -1992,7 +1992,7 @@ static void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus)
         healthBarSpriteId = gSprites[healthboxSpriteId].hMain_HealthBarSpriteId;
 
         if (noStatus)
-            CpuCopy32(gNuzlockeFirstEncounterIndicatorGfx, (void*)(OBJ_VRAM0 + (gSprites[healthBarSpriteId].oam.tileNum + 8) * TILE_SIZE_4BPP), 32);
+            CpuCopy32(gNuzlockeFirstEncounterIndicatorGfx, (void *)(OBJ_VRAM0 + (gSprites[healthBarSpriteId].oam.tileNum  + 8) * TILE_SIZE_4BPP), 32);
         else
             CpuFill32(0, (void*)(OBJ_VRAM0 + (gSprites[healthBarSpriteId].oam.tileNum + 8) * TILE_SIZE_4BPP), 32);
         return;

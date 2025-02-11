@@ -2635,9 +2635,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 
     if (HMsOverwriteOptionActive() && slotId == 0) //tx_randomizer_and_challenges
     {
-        if (CheckBagHasItem(ITEM_HM05_FLASH, 1) && !hasFlashAlready)
+        if (CheckBagHasItem(ITEM_HM05, 1) && !hasFlashAlready)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
-        if (CheckBagHasItem(ITEM_HM02_FLY, 1) && !hasFlyAlread)
+        if (CheckBagHasItem(ITEM_HM02, 1) && !hasFlyAlread)
             AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
     }
 
