@@ -56,7 +56,6 @@ static void AddSpritesToOamBuffer(void);
 static u8 CreateSpriteAt(u8 index, const struct SpriteTemplate *template, s16 x, s16 y, u8 subpriority);
 static void ResetOamMatrices(void);
 static void ResetSprite(struct Sprite *sprite);
-static s16 AllocSpriteTiles(u16 tileCount);
 static void RequestSpriteFrameImageCopy(u16 index, u16 tileNum, const struct SpriteFrameImage *images);
 static void ResetAllSprites(void);
 static void BeginAnim(struct Sprite *sprite);
@@ -1587,6 +1586,7 @@ void FreeAllSpritePalettes(void)
 u8 LoadSpritePalette(const struct SpritePalette *palette)
 {
     u8 index = IndexOfSpritePaletteTag(palette->tag);
+    u8 i;
 
     if (index != 0xFF)
         return index;
@@ -1650,8 +1650,12 @@ u16 GetSpritePaletteTagByPaletteNum(u8 paletteNum)
 void FreeSpritePaletteByTag(u16 tag)
 {
     u8 index = IndexOfSpritePaletteTag(tag);
-    if (index != 0xFF)
-        sSpritePaletteTags[index] = TAG_NONE;
+    if (index != 0xFF) {
+      sSpritePaletteTags[index] = TAG_NONE;
+      #if DEBUG
+      FillPalette(0, index * 16 + 0x100, 32);
+      #endif
+    }
 }
 
 void SetSubspriteTables(struct Sprite *sprite, const struct SubspriteTable *subspriteTables)
@@ -1748,7 +1752,7 @@ bool8 AddSubspritesToOamBuffer(struct Sprite *sprite, struct OamData *destOam, u
             destOam[i].y = baseY + y;
             destOam[i].tileNum = tileNum + subspriteTable->subsprites[i].tileOffset;
 
-            if (sprite->subspriteMode != SUBSPRITES_IGNORE_PRIORITY)
+            if (sprite->subspriteMode < SUBSPRITES_IGNORE_PRIORITY)
                 destOam[i].priority = subspriteTable->subsprites[i].priority;
         }
     }
