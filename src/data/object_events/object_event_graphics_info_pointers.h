@@ -227,8 +227,6 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dusclops;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnionRoomAttendant;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sudowoodo;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mew;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Deoxys;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirthIslandStone;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brandon;
@@ -247,6 +245,51 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_RBY_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_RBY_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_RBY_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red_RBY_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Green_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Green_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Green_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Green_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ethan_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ethan_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ethan_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ethan_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucas_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucas_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucas_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucas_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hilbert_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hilbert_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hilbert_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hilbert_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_Underwater;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -480,8 +523,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_UNION_ROOM_NURSE] =         &gObjectEventGraphicsInfo_UnionRoomAttendant,
     [OBJ_EVENT_GFX_SUDOWOODO] =                &gObjectEventGraphicsInfo_Sudowoodo,
     [OBJ_EVENT_GFX_MEW] =                      &gObjectEventGraphicsInfo_Mew,
-    [OBJ_EVENT_GFX_RED] =                      &gObjectEventGraphicsInfo_Red,
-    [OBJ_EVENT_GFX_LEAF] =                     &gObjectEventGraphicsInfo_Leaf,
     [OBJ_EVENT_GFX_DEOXYS] =                   &gObjectEventGraphicsInfo_Deoxys,
     [OBJ_EVENT_GFX_DEOXYS_TRIANGLE] =          &gObjectEventGraphicsInfo_BirthIslandStone,
     [OBJ_EVENT_GFX_BRANDON] =                  &gObjectEventGraphicsInfo_Brandon,
@@ -491,6 +532,56 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
+
+    [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_Red_Normal,
+    [OBJ_EVENT_GFX_RED_ACRO_BIKE] =            &gObjectEventGraphicsInfo_Red_AcroBike,
+    [OBJ_EVENT_GFX_RED_SURFING] =              &gObjectEventGraphicsInfo_Red_Surfing,
+    [OBJ_EVENT_GFX_RED_UNDERWATER] =           &gObjectEventGraphicsInfo_Red_Underwater,
+
+    [OBJ_EVENT_GFX_LEAF_NORMAL] =              &gObjectEventGraphicsInfo_Leaf_Normal,
+    [OBJ_EVENT_GFX_LEAF_ACRO_BIKE] =           &gObjectEventGraphicsInfo_Leaf_AcroBike,
+    [OBJ_EVENT_GFX_LEAF_SURFING] =             &gObjectEventGraphicsInfo_Leaf_Surfing,
+    [OBJ_EVENT_GFX_LEAF_UNDERWATER] =          &gObjectEventGraphicsInfo_Leaf_Underwater,
+
+    [OBJ_EVENT_GFX_BLUE_NORMAL] =              &gObjectEventGraphicsInfo_Blue_Normal,
+    [OBJ_EVENT_GFX_BLUE_ACRO_BIKE] =           &gObjectEventGraphicsInfo_Blue_AcroBike,
+    [OBJ_EVENT_GFX_BLUE_SURFING] =             &gObjectEventGraphicsInfo_Blue_Surfing,
+    [OBJ_EVENT_GFX_BLUE_UNDERWATER] =          &gObjectEventGraphicsInfo_Blue_Underwater,
+
+    [OBJ_EVENT_GFX_RED_RBY_NORMAL] =           &gObjectEventGraphicsInfo_Red_RBY_Normal,
+    [OBJ_EVENT_GFX_RED_RBY_ACRO_BIKE] =        &gObjectEventGraphicsInfo_Red_RBY_AcroBike,
+    [OBJ_EVENT_GFX_RED_RBY_SURFING] =          &gObjectEventGraphicsInfo_Red_RBY_Surfing,
+    [OBJ_EVENT_GFX_RED_RBY_UNDERWATER] =       &gObjectEventGraphicsInfo_Red_RBY_Underwater,
+
+    [OBJ_EVENT_GFX_GREEN_NORMAL] =             &gObjectEventGraphicsInfo_Green_Normal,
+    [OBJ_EVENT_GFX_GREEN_ACRO_BIKE] =          &gObjectEventGraphicsInfo_Green_AcroBike,
+    [OBJ_EVENT_GFX_GREEN_SURFING] =            &gObjectEventGraphicsInfo_Green_Surfing,
+    [OBJ_EVENT_GFX_GREEN_UNDERWATER] =         &gObjectEventGraphicsInfo_Green_Underwater,
+
+    [OBJ_EVENT_GFX_ETHAN_NORMAL] =             &gObjectEventGraphicsInfo_Ethan_Normal,
+    [OBJ_EVENT_GFX_ETHAN_ACRO_BIKE] =          &gObjectEventGraphicsInfo_Ethan_AcroBike,
+    [OBJ_EVENT_GFX_ETHAN_SURFING] =            &gObjectEventGraphicsInfo_Ethan_Surfing,
+    [OBJ_EVENT_GFX_ETHAN_UNDERWATER] =         &gObjectEventGraphicsInfo_Ethan_Underwater,
+
+    [OBJ_EVENT_GFX_LUCAS_NORMAL] =             &gObjectEventGraphicsInfo_Lucas_Normal,
+    [OBJ_EVENT_GFX_LUCAS_ACRO_BIKE] =          &gObjectEventGraphicsInfo_Lucas_AcroBike,
+    [OBJ_EVENT_GFX_LUCAS_SURFING] =            &gObjectEventGraphicsInfo_Lucas_Surfing,
+    [OBJ_EVENT_GFX_LUCAS_UNDERWATER] =         &gObjectEventGraphicsInfo_Lucas_Underwater,
+
+    [OBJ_EVENT_GFX_HILBERT_NORMAL] =           &gObjectEventGraphicsInfo_Hilbert_Normal,
+    [OBJ_EVENT_GFX_HILBERT_ACRO_BIKE] =        &gObjectEventGraphicsInfo_Hilbert_AcroBike,
+    [OBJ_EVENT_GFX_HILBERT_SURFING] =          &gObjectEventGraphicsInfo_Hilbert_Surfing,
+    [OBJ_EVENT_GFX_HILBERT_UNDERWATER] =       &gObjectEventGraphicsInfo_Hilbert_Underwater,
+
+    [OBJ_EVENT_GFX_DAWN_NORMAL] =              &gObjectEventGraphicsInfo_Dawn_Normal,
+    [OBJ_EVENT_GFX_DAWN_ACRO_BIKE] =           &gObjectEventGraphicsInfo_Dawn_AcroBike,
+    [OBJ_EVENT_GFX_DAWN_SURFING] =             &gObjectEventGraphicsInfo_Dawn_Surfing,
+    [OBJ_EVENT_GFX_DAWN_UNDERWATER] =          &gObjectEventGraphicsInfo_Dawn_Underwater,
+
+    [OBJ_EVENT_GFX_RED_RBY_NORMAL] =           &gObjectEventGraphicsInfo_Red_Normal,
+    [OBJ_EVENT_GFX_RED_RBY_ACRO_BIKE] =        &gObjectEventGraphicsInfo_Red_AcroBike,
+    [OBJ_EVENT_GFX_RED_RBY_SURFING] =          &gObjectEventGraphicsInfo_Red_Surfing,
+    [OBJ_EVENT_GFX_RED_RBY_UNDERWATER] =       &gObjectEventGraphicsInfo_Red_Underwater,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

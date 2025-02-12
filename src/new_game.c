@@ -218,6 +218,7 @@ void NewGameInitData(void)
     ResetTrainerHillResults();
     ResetContestLinkResults();
     ResetOutfitData();
+    AddBagItem(ITEM_OUTFIT_BOX, 1);
 }
 
 static void ResetMiniGamesRecords(void)

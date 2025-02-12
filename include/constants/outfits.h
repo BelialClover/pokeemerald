@@ -14,10 +14,13 @@
 #define OUTFIT_BUFFER_DESC  1
 
 //! outfits
-#define OUTFIT_NONE 0
+#define OUTFIT_NONE        0
 #define OUTFIT_USUAL_GREEN 1
 #define OUTFIT_UNUSUAL_RED 2
-#define OUTFIT_COUNT 3
+#define OUTFIT_FRLG        3
+#define OUTFIT_RBY         4
+#define OUTFIT_DPPT        5
+#define OUTFIT_COUNT       6
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_USUAL_GREEN

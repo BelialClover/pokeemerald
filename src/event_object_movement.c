@@ -528,6 +528,18 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 // Gen VIII
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif
+
+//Outfits
+#define OBJ_EVENT_PAL_TAG_RED                     0x116A
+#define OBJ_EVENT_PAL_TAG_LEAF                    0x116B
+#define OBJ_EVENT_PAL_TAG_BLUE                    0x116C
+#define OBJ_EVENT_PAL_TAG_GREEN                   0x116D
+#define OBJ_EVENT_PAL_TAG_ETHAN                   0x116E
+#define OBJ_EVENT_PAL_TAG_LUCAS                   0x116F
+#define OBJ_EVENT_PAL_TAG_HILBERT                 0x1170
+#define OBJ_EVENT_PAL_TAG_DAWN                    0x1171
+#define OBJ_EVENT_PAL_TAG_RED_RBY                 0x1172
+
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_EMOTES                  0x8002
@@ -580,9 +592,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
-    {gObjectEventPal_CastformSunny, OBJ_EVENT_PAL_TAG_CASTFORM_SUNNY},
-    {gObjectEventPal_CastformRainy, OBJ_EVENT_PAL_TAG_CASTFORM_RAINY},
-    {gObjectEventPal_CastformSnowy, OBJ_EVENT_PAL_TAG_CASTFORM_SNOWY},
+    {gObjectEventPal_CastformSunny,         OBJ_EVENT_PAL_TAG_CASTFORM_SUNNY},
+    {gObjectEventPal_CastformRainy,         OBJ_EVENT_PAL_TAG_CASTFORM_RAINY},
+    {gObjectEventPal_CastformSnowy,         OBJ_EVENT_PAL_TAG_CASTFORM_SNOWY},
     #if OW_MON_POKEBALLS
     // Vanilla
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
@@ -629,6 +641,18 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     #ifdef ITEM_STRANGE_BALL
     {gObjectEventPal_StrangeBall,           OBJ_EVENT_PAL_TAG_BALL_STRANGE},
     #endif
+
+    //Outfit Palettes
+    {gObjectEventPalette_Red,                OBJ_EVENT_PAL_TAG_RED},
+    {gObjectEventPalette_Leaf,               OBJ_EVENT_PAL_TAG_LEAF},
+    {gObjectEventPalette_Blue,               OBJ_EVENT_PAL_TAG_BLUE},
+    {gObjectEventPalette_Green,              OBJ_EVENT_PAL_TAG_GREEN},
+    {gObjectEventPalette_Ethan,              OBJ_EVENT_PAL_TAG_ETHAN},
+    {gObjectEventPalette_Lucas,              OBJ_EVENT_PAL_TAG_LUCAS},
+    {gObjectEventPalette_Hilbert,            OBJ_EVENT_PAL_TAG_HILBERT},
+    {gObjectEventPalette_Dawn,               OBJ_EVENT_PAL_TAG_DAWN},
+    {gObjectEventPalette_Red_RBY,            OBJ_EVENT_PAL_TAG_RED_RBY},
+
     #endif
     {gObjectEventPal_Substitute, OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes, OBJ_EVENT_PAL_TAG_EMOTES},

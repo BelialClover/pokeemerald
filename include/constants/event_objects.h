@@ -243,6 +243,52 @@
 #define OBJ_EVENT_GFX_POKE_BALL                  OBJ_EVENT_GFX_ITEM_BALL // replaces ITEM_BALL
 #define OBJ_EVENT_GFX_OW_MON                     OBJ_EVENT_GFX_REGICE
 
+//Red (FRLG)
+#define OBJ_EVENT_GFX_RED_NORMAL                 OBJ_EVENT_GFX_RED
+#define OBJ_EVENT_GFX_RED_ACRO_BIKE              239
+#define OBJ_EVENT_GFX_RED_SURFING                240
+#define OBJ_EVENT_GFX_RED_UNDERWATER             241
+//Leaf (FRLG)
+#define OBJ_EVENT_GFX_LEAF_NORMAL                OBJ_EVENT_GFX_LEAF
+#define OBJ_EVENT_GFX_LEAF_ACRO_BIKE             242
+#define OBJ_EVENT_GFX_LEAF_SURFING               243
+#define OBJ_EVENT_GFX_LEAF_UNDERWATER            244
+//Blue (RGBY)
+#define OBJ_EVENT_GFX_BLUE_NORMAL                245
+#define OBJ_EVENT_GFX_BLUE_ACRO_BIKE             246
+#define OBJ_EVENT_GFX_BLUE_SURFING               247
+#define OBJ_EVENT_GFX_BLUE_UNDERWATER            248
+//Red (RGBY)
+#define OBJ_EVENT_GFX_RED_RBY_NORMAL             249
+#define OBJ_EVENT_GFX_RED_RBY_ACRO_BIKE          250
+#define OBJ_EVENT_GFX_RED_RBY_SURFING            251
+#define OBJ_EVENT_GFX_RED_RBY_UNDERWATER         252
+//Green (FRLG Rival)
+#define OBJ_EVENT_GFX_GREEN_NORMAL               253
+#define OBJ_EVENT_GFX_GREEN_ACRO_BIKE            254
+#define OBJ_EVENT_GFX_GREEN_SURFING              255
+#define OBJ_EVENT_GFX_GREEN_UNDERWATER           256
+//Ethan
+#define OBJ_EVENT_GFX_ETHAN_NORMAL               257
+#define OBJ_EVENT_GFX_ETHAN_ACRO_BIKE            258
+#define OBJ_EVENT_GFX_ETHAN_SURFING              259
+#define OBJ_EVENT_GFX_ETHAN_UNDERWATER           260
+//Lucas (Platinum)
+#define OBJ_EVENT_GFX_LUCAS_NORMAL               261
+#define OBJ_EVENT_GFX_LUCAS_ACRO_BIKE            262
+#define OBJ_EVENT_GFX_LUCAS_SURFING              263
+#define OBJ_EVENT_GFX_LUCAS_UNDERWATER           264
+//Hilbert
+#define OBJ_EVENT_GFX_HILBERT_NORMAL             265
+#define OBJ_EVENT_GFX_HILBERT_ACRO_BIKE          266
+#define OBJ_EVENT_GFX_HILBERT_SURFING            267
+#define OBJ_EVENT_GFX_HILBERT_UNDERWATER         268
+//Dawn
+#define OBJ_EVENT_GFX_DAWN_NORMAL                269
+#define OBJ_EVENT_GFX_DAWN_ACRO_BIKE             270
+#define OBJ_EVENT_GFX_DAWN_SURFING               271
+#define OBJ_EVENT_GFX_DAWN_UNDERWATER            272
+
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic
@@ -252,7 +298,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        239
+#define NUM_OBJ_EVENT_GFX                        273
 
 
 // These are dynamic object gfx ids.

@@ -538,6 +538,7 @@ static const u16 sTSShadowPal[] = INCBIN_U16("graphics/outfit_menu/shadow.gbapal
 static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool32 unlocked)
 {
     u16 id = GetPlayerTrainerPicIdByOutfitGenderType(sOutfitMenu->idx, gSaveBlock2Ptr->playerGender, 0);
+    unlocked = TRUE;
     if (update)
     {
         FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_TS]);
@@ -1013,8 +1014,8 @@ bool8 GetOutfitStatus(u16 id)
         return FALSE;
 
     // return false if flag is not set
-    if (!(((*ptr) >> (id & 7)) & 1))
-        return FALSE;
+    //if (!(((*ptr) >> (id & 7)) & 1))
+    //    return FALSE;
 
     // rest
     return TRUE;
