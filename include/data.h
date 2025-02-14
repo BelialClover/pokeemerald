@@ -133,6 +133,14 @@ extern const struct SpriteFrameImage gTrainerBackPicTable_RubySapphireMay[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Wally[];
 extern const struct SpriteFrameImage gTrainerBackPicTable_Steven[];
 
+extern const struct SpriteFrameImage gTrainerBackPicTable_Red_RBY[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Blue[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Green[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Ethan[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Lucas[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Hilbert[];
+extern const struct SpriteFrameImage gTrainerBackPicTable_Dawn[];
+
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpritePlayerSide[];
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpriteOpponentSide[];
 extern const union AffineAnimCmd *const gAffineAnims_BattleSpriteContest[];
