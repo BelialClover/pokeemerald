@@ -77,12 +77,17 @@
 #define OBJ_EVENT_GFX_SPENSER                     73
 #define OBJ_EVENT_GFX_NOLAND                      74
 #define OBJ_EVENT_GFX_LUCY                        75
-#define OBJ_EVENT_GFX_UNUSED_NATU_DOLL            76
-#define OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL       77
-#define OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL        78
-#define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL          79
-#define OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL         80
-#define OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL        81
+
+//Ethan
+#define OBJ_EVENT_GFX_ETHAN_NORMAL                76
+#define OBJ_EVENT_GFX_ETHAN_ACRO_BIKE             77
+#define OBJ_EVENT_GFX_ETHAN_SURFING               78
+#define OBJ_EVENT_GFX_ETHAN_UNDERWATER            79
+
+//Lucas (Platinum)
+#define OBJ_EVENT_GFX_LUCAS_NORMAL                80
+#define OBJ_EVENT_GFX_LUCAS_ACRO_BIKE             81
+
 #define OBJ_EVENT_GFX_CUTTABLE_TREE               82
 #define OBJ_EVENT_GFX_MART_EMPLOYEE               83
 #define OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN          84
@@ -263,31 +268,33 @@
 #define OBJ_EVENT_GFX_RED_RBY_ACRO_BIKE          250
 #define OBJ_EVENT_GFX_RED_RBY_SURFING            251
 #define OBJ_EVENT_GFX_RED_RBY_UNDERWATER         252
-//Green (FRLG Rival)
-#define OBJ_EVENT_GFX_GREEN_NORMAL               253
-#define OBJ_EVENT_GFX_GREEN_ACRO_BIKE            254
-#define OBJ_EVENT_GFX_GREEN_SURFING              255
-#define OBJ_EVENT_GFX_GREEN_UNDERWATER           256
-//Ethan
-#define OBJ_EVENT_GFX_ETHAN_NORMAL               257
-#define OBJ_EVENT_GFX_ETHAN_ACRO_BIKE            258
-#define OBJ_EVENT_GFX_ETHAN_SURFING              259
-#define OBJ_EVENT_GFX_ETHAN_UNDERWATER           260
-//Lucas (Platinum)
-#define OBJ_EVENT_GFX_LUCAS_NORMAL               261
-#define OBJ_EVENT_GFX_LUCAS_ACRO_BIKE            262
-#define OBJ_EVENT_GFX_LUCAS_SURFING              263
-#define OBJ_EVENT_GFX_LUCAS_UNDERWATER           264
+
+#define OBJ_EVENT_GFX_LUCAS_SURFING              253
+#define OBJ_EVENT_GFX_LUCAS_UNDERWATER           254
 //Hilbert
-#define OBJ_EVENT_GFX_HILBERT_NORMAL             265
-#define OBJ_EVENT_GFX_HILBERT_ACRO_BIKE          266
-#define OBJ_EVENT_GFX_HILBERT_SURFING            267
-#define OBJ_EVENT_GFX_HILBERT_UNDERWATER         268
+#define OBJ_EVENT_GFX_HILBERT_NORMAL             255
+#define OBJ_EVENT_GFX_HILBERT_ACRO_BIKE          256 //Overflow
+#define OBJ_EVENT_GFX_HILBERT_SURFING            257 //Overflow
+#define OBJ_EVENT_GFX_HILBERT_UNDERWATER         258 //Overflow
 //Dawn
-#define OBJ_EVENT_GFX_DAWN_NORMAL                269
-#define OBJ_EVENT_GFX_DAWN_ACRO_BIKE             270
-#define OBJ_EVENT_GFX_DAWN_SURFING               271
-#define OBJ_EVENT_GFX_DAWN_UNDERWATER            272
+#define OBJ_EVENT_GFX_DAWN_NORMAL                259 //Overflow
+#define OBJ_EVENT_GFX_DAWN_ACRO_BIKE             260 //Overflow
+#define OBJ_EVENT_GFX_DAWN_SURFING               261 //Overflow
+#define OBJ_EVENT_GFX_DAWN_UNDERWATER            262 //Overflow
+
+#define OBJ_EVENT_GFX_UNUSED_NATU_DOLL           263 //Overflow
+#define OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL      264 //Overflow
+#define OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL       265 //Overflow
+
+#define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL         266 //Overflow
+#define OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL        267 //Overflow
+#define OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL       268 //Overflow
+
+//Green (FRLG Rival)
+#define OBJ_EVENT_GFX_GREEN_NORMAL               269 //Overflow
+#define OBJ_EVENT_GFX_GREEN_ACRO_BIKE            270 //Overflow
+#define OBJ_EVENT_GFX_GREEN_SURFING              271 //Overflow
+#define OBJ_EVENT_GFX_GREEN_UNDERWATER           272 //Overflow
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //

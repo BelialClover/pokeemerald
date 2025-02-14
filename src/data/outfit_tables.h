@@ -95,69 +95,33 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
     [OUTFIT_NONE] = {
         .isHidden = TRUE
     },
-    [OUTFIT_USUAL_GREEN] = {
-        //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
-        .isHidden = FALSE,
-
-        //! DESC: prices for purchasing them.
-        .prices = { 0, 0 },
-
-        //! agbcc doesnt like COMPOUND_STRING on my end
-        //! DESC: outfit's name
-        #if MODERN == 1
-        .name = COMPOUND_STRING("Emerald"),
-        #else
-        .name = sText_OutfitName_UsualGreen,
-        #endif
-
-        //! DESC: outfit's description
-        #if MODERN == 1
-        .desc = COMPOUND_STRING("The usual, but\nbasic OUTFIT."),
-        #else
-        .desc = sText_OutfitDesc_UsualGreen,
-        #endif
-
-        //! DESC: trainer front & back pic index
-        //! (see include/constants/trainers.h)
-        .trainerPics = TRAINER_ID(BRENDAN, MAY),
-
-        //! DESC: overworld avatars, consisting of: walking, cycling,
-        //! surfing, and underwater. (see include/constants/event_object.h)
+    [OUTFIT_EMERALD] = {
+        .isHidden     = FALSE,
+        .prices       = { 0, 0 },
+        .name         = COMPOUND_STRING("Emerald"),
+        .desc         = COMPOUND_STRING("Emerald Outfit."),
+        .trainerPics  = TRAINER_ID(BRENDAN, MAY),
         .avatarGfxIds = AVATAR_GFX_ID(BRENDAN, MAY),
-
-        //! DESC: overworld anims, consisting of: field move, fishing,
-        //! water, and decorating. (see include/constants/event_object.h)
-        .animGfxIds = ANIM_GFX_ID(BRENDAN, MAY),
-
-        //! DESC: head icons gfx&pal for region map
-        .iconsRM = REGION_MAP_GFX(Brendan, May),
-
-        //! DESC: head icons gfx&pal for frontier pass
-        //! note that frontier pass needs to be in one sprite instead of two,
-        //! unlike region map. (probably should split them tbh)
-        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
+        .animGfxIds   = ANIM_GFX_ID(BRENDAN, MAY),
+        .iconsRM      = REGION_MAP_GFX(Brendan, May),
+        .iconsFP      = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     },
-    [OUTFIT_UNUSUAL_RED] = {
-        .isHidden = FALSE,
-        .prices = { 0, 0 },
-        #if MODERN == 1
-        .name = COMPOUND_STRING("RS"),
-        .desc = COMPOUND_STRING("Rather unusual,\nbut still basic\nOUTFIT."),
-        #else
-        .name = sText_OutfitName_UnusualRed,
-        .desc = sText_OutfitDesc_UnusualRed,
-        #endif
-        .trainerPics = TRAINER_ID(RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY),
+    [OUTFIT_RS] = {
+        .isHidden     = FALSE,
+        .prices       = { 0, 0 },
+        .name         = COMPOUND_STRING("RS"),
+        .desc         = COMPOUND_STRING("Ruby\nand Sapphire\nOutfit."),
+        .trainerPics  = TRAINER_ID(RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY),
         .avatarGfxIds = AVATAR_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .animGfxIds = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM = REGION_MAP_GFX(RSBrendan, RSMay),
-        .iconsFP = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
+        .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
+        .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_FRLG] = {
         .isHidden     = FALSE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("FRLG"),
-        .desc         = COMPOUND_STRING("Rather unusual,\nbut still basic\nOUTFIT."),
+        .desc         = COMPOUND_STRING("Fire Red\nand Leaf Green\nOutfit."),
         .trainerPics  = TRAINER_ID(RED, LEAF),
         .avatarGfxIds = AVATAR_GFX_ID(RED, LEAF),
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
@@ -168,7 +132,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .isHidden     = FALSE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("RBY"),
-        .desc         = COMPOUND_STRING("Rather unusual,\nbut still basic\nOUTFIT."),
+        .desc         = COMPOUND_STRING("Red, Blue and\nYellow Outfit."),
         .trainerPics  = TRAINER_ID(RED_RBY, BLUE),
         .avatarGfxIds = AVATAR_GFX_ID(RED_RBY, BLUE),
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
@@ -178,10 +142,32 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
     [OUTFIT_DPPT] = {
         .isHidden     = FALSE,
         .prices       = { 0, 0 },
-        .name         = COMPOUND_STRING("RBY"),
-        .desc         = COMPOUND_STRING("Rather unusual,\nbut still basic\nOUTFIT."),
+        .name         = COMPOUND_STRING("Platinum"),
+        .desc         = COMPOUND_STRING("Platinum Outfit."),
         .trainerPics  = TRAINER_ID(LUCAS, DAWN),
         .avatarGfxIds = AVATAR_GFX_ID(LUCAS, DAWN),
+        .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
+        .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
+        .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+    },
+    [OUTFIT_GSC] = {
+        .isHidden     = FALSE,
+        .prices       = { 0, 0 },
+        .name         = COMPOUND_STRING("GSC"),
+        .desc         = COMPOUND_STRING("Gold and Silver\nOutfit."),
+        .trainerPics  = TRAINER_ID(ETHAN, DAWN),
+        .avatarGfxIds = AVATAR_GFX_ID(LUCAS, DAWN),
+        .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
+        .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
+        .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+    },
+    [OUTFIT_BW] = {
+        .isHidden     = FALSE,
+        .prices       = { 0, 0 },
+        .name         = COMPOUND_STRING("BW"),
+        .desc         = COMPOUND_STRING("Black and White\nOutfit."),
+        .trainerPics  = TRAINER_ID(HILBERT, DAWN),
+        .avatarGfxIds = AVATAR_GFX_ID(HILBERT, DAWN),
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,

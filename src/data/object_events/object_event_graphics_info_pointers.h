@@ -577,11 +577,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DAWN_ACRO_BIKE] =           &gObjectEventGraphicsInfo_Dawn_AcroBike,
     [OBJ_EVENT_GFX_DAWN_SURFING] =             &gObjectEventGraphicsInfo_Dawn_Surfing,
     [OBJ_EVENT_GFX_DAWN_UNDERWATER] =          &gObjectEventGraphicsInfo_Dawn_Underwater,
-
-    [OBJ_EVENT_GFX_RED_RBY_NORMAL] =           &gObjectEventGraphicsInfo_Red_Normal,
-    [OBJ_EVENT_GFX_RED_RBY_ACRO_BIKE] =        &gObjectEventGraphicsInfo_Red_AcroBike,
-    [OBJ_EVENT_GFX_RED_RBY_SURFING] =          &gObjectEventGraphicsInfo_Red_Surfing,
-    [OBJ_EVENT_GFX_RED_RBY_UNDERWATER] =       &gObjectEventGraphicsInfo_Red_Underwater,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
