@@ -17,17 +17,21 @@
 #define OUTFIT_NONE        0
 #define OUTFIT_EMERALD     1
 #define OUTFIT_RS          2
-#define OUTFIT_FRLG        3
-#define OUTFIT_RBY         4
-#define OUTFIT_DPPT        5
-#define OUTFIT_GSC         6
-#define OUTFIT_BW          7
+#define OUTFIT_ORAS        3
 
-#define OUTFIT_COUNT       8
+#define OUTFIT_RBY         4
+#define OUTFIT_FRLG        5
+#define OUTFIT_MISC        6
+
+#define OUTFIT_GSC         7
+#define OUTFIT_DPPT        8
+#define OUTFIT_BW          9
+
+#define OUTFIT_COUNT       10
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_EMERALD
-#define OUTFIT_END   OUTFIT_RS
+#define OUTFIT_END   OUTFIT_MISC
 
 #define DEFAULT_OUTFIT OUTFIT_EMERALD
 

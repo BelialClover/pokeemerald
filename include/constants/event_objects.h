@@ -296,6 +296,18 @@
 #define OBJ_EVENT_GFX_GREEN_SURFING              271 //Overflow
 #define OBJ_EVENT_GFX_GREEN_UNDERWATER           272 //Overflow
 
+//Brendan (ORAS)
+#define OBJ_EVENT_GFX_BRENDAN_ORAS_NORMAL        273 //Overflow
+#define OBJ_EVENT_GFX_BRENDAN_ORAS_ACRO_BIKE     274 //Overflow
+#define OBJ_EVENT_GFX_BRENDAN_ORAS_SURFING       275 //Overflow
+#define OBJ_EVENT_GFX_BRENDAN_ORAS_UNDERWATER    276 //Overflow
+
+//May (Oras)
+#define OBJ_EVENT_GFX_MAY_ORAS_NORMAL            278 //Overflow
+#define OBJ_EVENT_GFX_MAY_ORAS_ACRO_BIKE         279 //Overflow
+#define OBJ_EVENT_GFX_MAY_ORAS_SURFING           280 //Overflow
+#define OBJ_EVENT_GFX_MAY_ORAS_UNDERWATER        281 //Overflow
+
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic
@@ -305,7 +317,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        273
+#define NUM_OBJ_EVENT_GFX                        282
 
 
 // These are dynamic object gfx ids.

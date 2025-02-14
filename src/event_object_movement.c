@@ -539,6 +539,8 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_HILBERT                 0x1170
 #define OBJ_EVENT_PAL_TAG_DAWN                    0x1171
 #define OBJ_EVENT_PAL_TAG_RED_RBY                 0x1172
+#define OBJ_EVENT_PAL_TAG_BRENDAN_ORAS            0x1173
+#define OBJ_EVENT_PAL_TAG_MAY_ORAS                0x1174
 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
@@ -652,6 +654,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Hilbert,            OBJ_EVENT_PAL_TAG_HILBERT},
     {gObjectEventPalette_Dawn,               OBJ_EVENT_PAL_TAG_DAWN},
     {gObjectEventPalette_Red_RBY,            OBJ_EVENT_PAL_TAG_RED_RBY},
+    {gObjectEventPalette_Brendan_ORAS,       OBJ_EVENT_PAL_TAG_BRENDAN_ORAS},
+    {gObjectEventPalette_May_ORAS,           OBJ_EVENT_PAL_TAG_MAY_ORAS},
 
     #endif
     {gObjectEventPal_Substitute, OBJ_EVENT_PAL_TAG_SUBSTITUTE},

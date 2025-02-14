@@ -291,6 +291,15 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_AcroBi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_Surfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dawn_Underwater;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brendan_ORAS_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brendan_ORAS_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brendan_ORAS_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Brendan_ORAS_Underwater;
+
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_May_ORAS_Normal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_May_ORAS_AcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_May_ORAS_Surfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_May_ORAS_Underwater;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -577,6 +586,16 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DAWN_ACRO_BIKE] =           &gObjectEventGraphicsInfo_Dawn_AcroBike,
     [OBJ_EVENT_GFX_DAWN_SURFING] =             &gObjectEventGraphicsInfo_Dawn_Surfing,
     [OBJ_EVENT_GFX_DAWN_UNDERWATER] =          &gObjectEventGraphicsInfo_Dawn_Underwater,
+
+    [OBJ_EVENT_GFX_BRENDAN_ORAS_NORMAL] =      &gObjectEventGraphicsInfo_Brendan_ORAS_Normal,
+    [OBJ_EVENT_GFX_BRENDAN_ORAS_ACRO_BIKE] =   &gObjectEventGraphicsInfo_Brendan_ORAS_AcroBike,
+    [OBJ_EVENT_GFX_BRENDAN_ORAS_SURFING] =     &gObjectEventGraphicsInfo_Brendan_ORAS_Surfing,
+    [OBJ_EVENT_GFX_BRENDAN_ORAS_UNDERWATER] =  &gObjectEventGraphicsInfo_Brendan_ORAS_Underwater,
+
+    [OBJ_EVENT_GFX_MAY_ORAS_NORMAL] =          &gObjectEventGraphicsInfo_May_ORAS_Normal,
+    [OBJ_EVENT_GFX_MAY_ORAS_ACRO_BIKE] =       &gObjectEventGraphicsInfo_May_ORAS_AcroBike,
+    [OBJ_EVENT_GFX_MAY_ORAS_SURFING] =         &gObjectEventGraphicsInfo_May_ORAS_Surfing,
+    [OBJ_EVENT_GFX_MAY_ORAS_UNDERWATER] =      &gObjectEventGraphicsInfo_May_ORAS_Underwater,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
