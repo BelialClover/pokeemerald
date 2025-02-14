@@ -534,6 +534,7 @@ static void SetupOutfitMenu_PrintStr(void)
     PrintTexts(WIN_DESC, FONT_NORMAL, 4, 0, 0, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
 }
 
+#define TRAINER_FRONT_SPRITE_PALETTE_NUMBER 10
 static const u16 sTSShadowPal[] = INCBIN_U16("graphics/outfit_menu/shadow.gbapal");
 static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool32 unlocked)
 {
@@ -545,9 +546,9 @@ static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool
         FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_TS_SHADOW]);
     }
 
-    sOutfitMenu->spriteIds[GFX_TS] = CreateTrainerPicSprite(id, TRUE, 48, 48, 9, TAG_NONE);
-    sOutfitMenu->spriteIds[GFX_TS_SHADOW] = CreateTrainerPicSprite(id, TRUE, 50, 48, 10, TAG_NONE);
-    LoadPalette(&sTSShadowPal, OBJ_PLTT_ID(10), PLTT_SIZE_4BPP);
+    sOutfitMenu->spriteIds[GFX_TS] = CreateTrainerPicSprite(id, TRUE, 48, 48, TRAINER_FRONT_SPRITE_PALETTE_NUMBER, TAG_NONE);
+    sOutfitMenu->spriteIds[GFX_TS_SHADOW] = CreateTrainerPicSprite(id, TRUE, 50, 48, TRAINER_FRONT_SPRITE_PALETTE_NUMBER + 1, TAG_NONE);
+    LoadPalette(&sTSShadowPal, OBJ_PLTT_ID(TRAINER_FRONT_SPRITE_PALETTE_NUMBER + 1), PLTT_SIZE_4BPP);
     gSprites[sOutfitMenu->spriteIds[GFX_TS_SHADOW]].oam.objMode = ST_OAM_OBJ_BLEND;
     gSprites[sOutfitMenu->spriteIds[GFX_TS_SHADOW]].oam.priority = 2;
     if (!unlocked)
