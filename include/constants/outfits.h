@@ -24,10 +24,11 @@
 #define OUTFIT_MISC        6
 
 #define OUTFIT_GSC         7
-#define OUTFIT_DPPT        8
+#define OUTFIT_PT          8
 #define OUTFIT_BW          9
+#define OUTFIT_DP          10
 
-#define OUTFIT_COUNT       10
+#define OUTFIT_COUNT       11
 
 // inclusive
 #define OUTFIT_BEGIN OUTFIT_EMERALD

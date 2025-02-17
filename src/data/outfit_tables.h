@@ -96,7 +96,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .isHidden = TRUE
     },
     [OUTFIT_EMERALD] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("Emerald"),
         .desc         = COMPOUND_STRING("Emerald Outfit."),
@@ -107,7 +107,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsFP      = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     },
     [OUTFIT_RS] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("RS"),
         .desc         = COMPOUND_STRING("Ruby\nand Sapphire\nOutfit."),
@@ -118,7 +118,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_FRLG] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("FRLG"),
         .desc         = COMPOUND_STRING("Fire Red\nand Leaf Green\nOutfit."),
@@ -129,7 +129,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_RBY] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("RBY"),
         .desc         = COMPOUND_STRING("Red, Blue and\nYellow Outfit."),
@@ -139,8 +139,8 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
-    [OUTFIT_DPPT] = {
-        .isHidden     = FALSE,
+    [OUTFIT_PT] = {
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("Platinum"),
         .desc         = COMPOUND_STRING("Platinum Outfit."),
@@ -149,9 +149,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .hiddenForFemale = TRUE,
     },
     [OUTFIT_GSC] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("GSC"),
         .desc         = COMPOUND_STRING("Gold and Silver\nOutfit."),
@@ -160,9 +161,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .hiddenForFemale = TRUE,
     },
     [OUTFIT_BW] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("BW"),
         .desc         = COMPOUND_STRING("Black and White\nOutfit."),
@@ -171,9 +173,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .hiddenForFemale = TRUE,
     },
     [OUTFIT_ORAS] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("ORAS"),
         .desc         = COMPOUND_STRING("Omega Ruby and\nAlpha Sapphire\nOutfit."),
@@ -184,7 +187,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_MISC] = {
-        .isHidden     = FALSE,
+        .isHidden     = TRUE,
         .prices       = { 0, 0 },
         .name         = COMPOUND_STRING("FRLG Rival"),
         .desc         = COMPOUND_STRING("FRLG Green\nOutfit."),
@@ -193,5 +196,18 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .animGfxIds   = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
         .iconsRM      = REGION_MAP_GFX(RSBrendan, RSMay),
         .iconsFP      = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .hiddenForFemale = TRUE,
+    },
+    [OUTFIT_DP] = {
+        .isHidden     = TRUE,
+        .prices        = { 0, 0 },
+        .name          = COMPOUND_STRING("FRLG Rival"),
+        .desc          = COMPOUND_STRING("Diamond and\nPearl Outfit."),
+        .trainerPics  = TRAINER_ID(LUCAS, DAWN),
+        .avatarGfxIds = AVATAR_GFX_ID(LUCAS, DAWN),
+        .animGfxIds    = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
+        .iconsRM       = REGION_MAP_GFX(RSBrendan, RSMay),
+        .iconsFP       = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
+        .hiddenForMale = TRUE,
     },
 };

@@ -197,6 +197,8 @@ struct Outfit
     //! region map & frontier pass
     const void *iconsRM[GENDER_COUNT]; //! region map
     const void *iconsFP; //! frontier pass
+    bool8 hiddenForFemale;
+    bool8 hiddenForMale;
 };
 
 extern const struct Outfit gOutfits[OUTFIT_COUNT];

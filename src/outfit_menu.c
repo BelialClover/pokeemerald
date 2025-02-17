@@ -534,12 +534,25 @@ static void SetupOutfitMenu_PrintStr(void)
     PrintTexts(WIN_DESC, FONT_NORMAL, 4, 0, 0, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
 }
 
+bool8 isOutfitUnlocked(u8 outfit){
+    bool8 gender   = gSaveBlock2Ptr->playerGender;
+    bool8 unlocked = TRUE;
+
+    if(!gender && gOutfits[outfit].hiddenForMale)
+        unlocked = FALSE;
+    else if(gender && gOutfits[outfit].hiddenForFemale)
+        unlocked = FALSE;
+
+    return unlocked;
+}
+
 #define TRAINER_FRONT_SPRITE_PALETTE_NUMBER 10
 static const u16 sTSShadowPal[] = INCBIN_U16("graphics/outfit_menu/shadow.gbapal");
 static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool32 unlocked)
 {
     u16 id = GetPlayerTrainerPicIdByOutfitGenderType(sOutfitMenu->idx, gSaveBlock2Ptr->playerGender, 0);
-    unlocked = TRUE;
+    unlocked = isOutfitUnlocked(gSaveBlock2Ptr->currOutfitId);
+
     if (update)
     {
         FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_TS]);
@@ -1008,13 +1021,17 @@ u16 LockOutfit(u16 id)
 
 bool8 GetOutfitStatus(u16 id)
 {
-    u16 *ptr = GetOutfitPointer(id);
+    u16 *ptr       = GetOutfitPointer(id);
+    bool8 unlocked = isOutfitUnlocked(id);
+
+    if(!unlocked)
+        return FALSE;
 
     // return false if GetOutfitPointer returns NULL
     if (!ptr)
         return FALSE;
 
-    // return false if flag is not set
+    //return false if flag is not set
     //if (!(((*ptr) >> (id & 7)) & 1))
     //    return FALSE;
 

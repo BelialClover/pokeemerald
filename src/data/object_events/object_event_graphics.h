@@ -1084,3 +1084,22 @@ const u32 gObjectEventPic_May_ORAS_Watering[]         = INCBIN_U32("graphics/obj
 const u32 gObjectEventPic_May_ORAS_Decorating[]       = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/decorating.4bpp");
 const u32 gObjectEventPic_May_ORAS_Underwater[]       = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/underwater.4bpp");
 const u16 gObjectEventPalette_May_ORAS[]      	      = INCBIN_U16("graphics/object_events/pics/people/female_player/oras/walking.gbapal");
+
+//Dawn Platinum --------------------------------------------------------------------------------------------------------------------------------
+const u32 gTrainerFrontPic_Dawn_PT[]                 = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/front.4bpp.lz");
+const u32 gTrainerPalette_Dawn_PT[]                  = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/front.gbapal.lz");
+const u8  gTrainerBackPic_Dawn_PT[]                  = INCBIN_U8 ("graphics/object_events/pics/people/female_player/pt/back.4bpp"); 
+const u16 gRegionMapPlayerIcon_Dawn_PTPal[]          = INCBIN_U16("graphics/object_events/pics/people/female_player/pt/icon.gbapal");
+const u8  sRegionMapPlayerIcon_Dawn_PTGfx[] 	     = INCBIN_U8 ("graphics/object_events/pics/people/female_player/pt/icon.4bpp");
+
+const u32 gObjectEventPic_Dawn_PT_Normal[]           = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/walking.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Running[]          = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/running.4bpp");
+const u32 gObjectEventPic_Dawn_PT_FieldMove[]        = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/field_move.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Surfing[]          = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/surfing.4bpp");
+const u32 gObjectEventPic_Dawn_PT_MachBike[]         = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/mach_bike.4bpp");
+const u32 gObjectEventPic_Dawn_PT_AcroBike[]         = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/acro_bike.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Fishing[]          = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/fishing.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Watering[]         = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/watering.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Decorating[]       = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/decorating.4bpp");
+const u32 gObjectEventPic_Dawn_PT_Underwater[]       = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/underwater.4bpp");
+const u16 gObjectEventPalette_Dawn_PT[]      	     = INCBIN_U16("graphics/object_events/pics/people/female_player/pt/walking.gbapal");
