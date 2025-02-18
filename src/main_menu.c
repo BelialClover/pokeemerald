@@ -11,6 +11,7 @@
 #include "gpu_regs.h"
 #include "graphics.h"
 #include "international_string_util.h"
+#include "item.h"
 #include "link.h"
 #include "main.h"
 #include "menu.h"
@@ -39,6 +40,7 @@
 #include "mystery_gift_menu.h"
 #include "tx_randomizer_and_challenges.h"
 #include "outfit_menu.h"
+#include "constants/items.h"
 
 /*
  * Main menu state machine
@@ -628,6 +630,9 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 static void Task_MainMenuCheckSaveFile(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
+
+    if(!CheckBagHasItem(ITEM_OUTFIT_BOX, 1))
+        AddBagItem(ITEM_OUTFIT_BOX, 1);
 
     if (!gPaletteFade.active)
     {

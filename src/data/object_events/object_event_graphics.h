@@ -879,8 +879,6 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 const u32 gTrainerFrontPic_Leaf[]                = INCBIN_U32("graphics/object_events/pics/people/female_player/frlg/front.4bpp.lz");
 const u32 gTrainerPalette_Leaf[]                 = INCBIN_U32("graphics/object_events/pics/people/female_player/frlg/front.gbapal.lz");
 const u8  gTrainerBackPic_Leaf[]                 = INCBIN_U8 ("graphics/object_events/pics/people/female_player/frlg/back.4bpp");
-const u16 gRegionMapPlayerIcon_LeafPal[] 		 = INCBIN_U16("graphics/object_events/pics/people/female_player/frlg/icon.gbapal");
-const u8  gRegionMapPlayerIcon_LeafGfx[] 		 = INCBIN_U8 ("graphics/object_events/pics/people/female_player/frlg/icon.4bpp");
 
 const u32 gObjectEventPic_Leaf_Normal[]     	 = INCBIN_U32("graphics/object_events/pics/people/female_player/frlg/walking.4bpp");
 const u32 gObjectEventPic_Leaf_Running[]    	 = INCBIN_U32("graphics/object_events/pics/people/female_player/frlg/running.4bpp");
@@ -899,8 +897,6 @@ const u32 gTrainerFrontPic_Red[]                      = INCBIN_U32("graphics/obj
 const u32 gTrainerPalette_Red[]                       = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg/front.gbapal.lz");
 const u8  gTrainerBackPic_Red[]                       = INCBIN_U8 ("graphics/object_events/pics/people/male_player/frlg/back.4bpp");
 const u16 gTrainerBackPalette_Red[]                   = INCBIN_U16("graphics/object_events/pics/people/male_player/frlg/back.gbapal");
-const u16 gRegionMapPlayerIcon_RedPal[] 	          = INCBIN_U16("graphics/object_events/pics/people/male_player/frlg/icon.gbapal");
-const u8  gRegionMapPlayerIcon_RedGfx[] 	          = INCBIN_U8 ("graphics/object_events/pics/people/male_player/frlg/icon.4bpp");
 
 const u32 gObjectEventPic_Red_Normal[]     		      = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg/walking.4bpp");
 const u32 gObjectEventPic_Red_Running[]    		      = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg/running.4bpp");
@@ -918,8 +914,6 @@ const u16 gObjectEventPalette_Red[]      	  	      = INCBIN_U16("graphics/object
 const u32 gTrainerFrontPic_Blue[]                     = INCBIN_U32("graphics/object_events/pics/people/female_player/rby/front.4bpp.lz");
 const u32 gTrainerPalette_Blue[]                      = INCBIN_U32("graphics/object_events/pics/people/female_player/rby/front.gbapal.lz");
 const u8  gTrainerBackPic_Blue[]                      = INCBIN_U8 ("graphics/object_events/pics/people/female_player/rby/back.4bpp");
-const u16 gRegionMapPlayerIcon_BluePal[] 		      = INCBIN_U16("graphics/object_events/pics/people/female_player/rby/icon.gbapal");
-const u8  gRegionMapPlayerIcon_BlueGfx[] 		      = INCBIN_U8 ("graphics/object_events/pics/people/female_player/rby/icon.4bpp");
 
 const u32 gObjectEventPic_Blue_Normal[]               = INCBIN_U32("graphics/object_events/pics/people/female_player/rby/walking.4bpp");
 const u32 gObjectEventPic_Blue_Running[]    	      = INCBIN_U32("graphics/object_events/pics/people/female_player/rby/running.4bpp");
@@ -937,8 +931,6 @@ const u16 gObjectEventPalette_Blue[]      	  	      = INCBIN_U16("graphics/objec
 const u32 gTrainerFrontPic_Dawn[]                     = INCBIN_U32("graphics/object_events/pics/people/female_player/dp/front.4bpp.lz");
 const u32 gTrainerPalette_Dawn[]                      = INCBIN_U32("graphics/object_events/pics/people/female_player/dp/front.gbapal.lz");
 const u8  gTrainerBackPic_Dawn[]                      = INCBIN_U8 ("graphics/object_events/pics/people/female_player/dp/back.4bpp");
-const u16 gRegionMapPlayerIcon_DawnPal[] 		      = INCBIN_U16("graphics/object_events/pics/people/female_player/dp/icon.gbapal");
-const u8  gRegionMapPlayerIcon_DawnGfx[] 		      = INCBIN_U8 ("graphics/object_events/pics/people/female_player/dp/icon.4bpp");
 
 const u32 gObjectEventPic_Dawn_Normal[]     	      = INCBIN_U32("graphics/object_events/pics/people/female_player/dp/walking.4bpp");
 const u32 gObjectEventPic_Dawn_Running[]    	      = INCBIN_U32("graphics/object_events/pics/people/female_player/dp/running.4bpp");
@@ -956,8 +948,6 @@ const u16 gObjectEventPalette_Dawn[]      	  	      = INCBIN_U16("graphics/objec
 const u32 gTrainerFrontPic_Lucas[]                    = INCBIN_U32("graphics/object_events/pics/people/male_player/dp/front.4bpp.lz");
 const u32 gTrainerPalette_Lucas[]                     = INCBIN_U32("graphics/object_events/pics/people/male_player/dp/front.gbapal.lz");
 const u8  gTrainerBackPic_Lucas[]                     = INCBIN_U8 ("graphics/object_events/pics/people/male_player/dp/back.4bpp");
-const u16 gRegionMapPlayerIcon_LucasPal[] 		      = INCBIN_U16("graphics/object_events/pics/people/male_player/dp/icon.gbapal");
-const u8  gRegionMapPlayerIcon_LucasGfx[] 		      = INCBIN_U8 ("graphics/object_events/pics/people/male_player/dp/icon.4bpp");
 
 const u32 gObjectEventPic_Lucas_Normal[]     	      = INCBIN_U32("graphics/object_events/pics/people/male_player/dp/walking.4bpp");
 const u32 gObjectEventPic_Lucas_Running[]    	      = INCBIN_U32("graphics/object_events/pics/people/male_player/dp/running.4bpp");
@@ -975,8 +965,6 @@ const u16 gObjectEventPalette_Lucas[]      	  	      = INCBIN_U16("graphics/obje
 const u32 gTrainerFrontPic_Hilbert[]                  = INCBIN_U32("graphics/object_events/pics/people/male_player/bw/front.4bpp.lz");
 const u32 gTrainerPalette_Hilbert[]                   = INCBIN_U32("graphics/object_events/pics/people/male_player/bw/front.gbapal.lz");
 const u8  gTrainerBackPic_Hilbert[]                   = INCBIN_U8 ("graphics/object_events/pics/people/male_player/bw/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_HilbertPal[]           = INCBIN_U16("graphics/object_events/pics/people/male_player/bw/icon.gbapal");
-const u8  sRegionMapPlayerIcon_HilbertGfx[] 	      = INCBIN_U8 ("graphics/object_events/pics/people/male_player/bw/icon.4bpp");
 
 const u32 gObjectEventPic_Hilbert_Normal[]            = INCBIN_U32("graphics/object_events/pics/people/male_player/bw/walking.4bpp");
 const u32 gObjectEventPic_Hilbert_Running[]    	      = INCBIN_U32("graphics/object_events/pics/people/male_player/bw/running.4bpp");
@@ -994,8 +982,6 @@ const u32 gTrainerFrontPic_Red_RBY[]                  = INCBIN_U32("graphics/obj
 const u32 gTrainerPalette_Red_RBY[]                   = INCBIN_U32("graphics/object_events/pics/people/male_player/rby/front.gbapal.lz");
 const u8  gTrainerBackPic_Red_RBY[]                   = INCBIN_U8 ("graphics/object_events/pics/people/male_player/rby/back.4bpp");
 const u16 gTrainerBackPalette_Red_RBY[]               = INCBIN_U16("graphics/object_events/pics/people/male_player/rby/back.gbapal");
-const u16 gRegionMapPlayerIcon_RedPal_RBY[] 	      = INCBIN_U16("graphics/object_events/pics/people/male_player/rby/icon.gbapal");
-const u8  gRegionMapPlayerIcon_RedGfx_RBY[] 	      = INCBIN_U8 ("graphics/object_events/pics/people/male_player/rby/icon.4bpp");
 
 const u32 gObjectEventPic_Red_RBY_Normal[]            = INCBIN_U32("graphics/object_events/pics/people/male_player/rby/walking.4bpp");
 const u32 gObjectEventPic_Red_RBY_Running[]   	      = INCBIN_U32("graphics/object_events/pics/people/male_player/rby/running.4bpp");
@@ -1013,8 +999,6 @@ const u16 gObjectEventPalette_Red_RBY[]      	      = INCBIN_U16("graphics/objec
 const u32 gTrainerFrontPic_Ethan[]                    = INCBIN_U32("graphics/object_events/pics/people/male_player/gsc/front.4bpp.lz");
 const u32 gTrainerPalette_Ethan[]                     = INCBIN_U32("graphics/object_events/pics/people/male_player/gsc/front.gbapal.lz");
 const u8  gTrainerBackPic_Ethan[]                     = INCBIN_U8 ("graphics/object_events/pics/people/male_player/gsc/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_EthanPal[]             = INCBIN_U16("graphics/object_events/pics/people/male_player/gsc/icon.gbapal");
-const u8  sRegionMapPlayerIcon_EthanGfx[] 	          = INCBIN_U8 ("graphics/object_events/pics/people/male_player/gsc/icon.4bpp");
 
 const u32 gObjectEventPic_Ethan_Normal[]              = INCBIN_U32("graphics/object_events/pics/people/male_player/gsc/walking.4bpp");
 const u32 gObjectEventPic_Ethan_Running[]             = INCBIN_U32("graphics/object_events/pics/people/male_player/gsc/running.4bpp");
@@ -1032,8 +1016,6 @@ const u16 gObjectEventPalette_Ethan[]      	          = INCBIN_U16("graphics/obj
 const u32 gTrainerFrontPic_Green[]                    = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg_rival/front.4bpp.lz");
 const u32 gTrainerPalette_Green[]                     = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg_rival/front.gbapal.lz");
 const u8  gTrainerBackPic_Green[]                     = INCBIN_U8 ("graphics/object_events/pics/people/male_player/frlg_rival/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_GreenPal[]             = INCBIN_U16("graphics/object_events/pics/people/male_player/frlg_rival/icon.gbapal");
-const u8  sRegionMapPlayerIcon_GreenGfx[] 	          = INCBIN_U8 ("graphics/object_events/pics/people/male_player/frlg_rival/icon.4bpp");
 
 const u32 gObjectEventPic_Green_Normal[]              = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg_rival/walking.4bpp");
 const u32 gObjectEventPic_Green_Running[]             = INCBIN_U32("graphics/object_events/pics/people/male_player/frlg_rival/running.4bpp");
@@ -1051,8 +1033,6 @@ const u16 gObjectEventPalette_Green[]      	          = INCBIN_U16("graphics/obj
 const u32 gTrainerFrontPic_Brendan_ORAS[]             = INCBIN_U32("graphics/object_events/pics/people/male_player/oras/front.4bpp.lz");
 const u32 gTrainerPalette_Brendan_ORAS[]              = INCBIN_U32("graphics/object_events/pics/people/male_player/oras/front.gbapal.lz");
 const u8  gTrainerBackPic_Brendan_ORAS[]              = INCBIN_U8 ("graphics/object_events/pics/people/male_player/oras/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_Brendan_ORASPal[]      = INCBIN_U16("graphics/object_events/pics/people/male_player/oras/icon.gbapal");
-const u8  sRegionMapPlayerIcon_Brendan_ORASGfx[] 	  = INCBIN_U8 ("graphics/object_events/pics/people/male_player/oras/icon.4bpp");
 
 const u32 gObjectEventPic_Brendan_ORAS_Normal[]       = INCBIN_U32("graphics/object_events/pics/people/male_player/oras/walking.4bpp");
 const u32 gObjectEventPic_Brendan_ORAS_Running[]      = INCBIN_U32("graphics/object_events/pics/people/male_player/oras/running.4bpp");
@@ -1070,8 +1050,6 @@ const u16 gObjectEventPalette_Brendan_ORAS[]      	  = INCBIN_U16("graphics/obje
 const u32 gTrainerFrontPic_May_ORAS[]                 = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/front.4bpp.lz");
 const u32 gTrainerPalette_May_ORAS[]                  = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/front.gbapal.lz");
 const u8  gTrainerBackPic_May_ORAS[]                  = INCBIN_U8 ("graphics/object_events/pics/people/female_player/oras/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_May_ORASPal[]          = INCBIN_U16("graphics/object_events/pics/people/female_player/oras/icon.gbapal");
-const u8  sRegionMapPlayerIcon_May_ORASGfx[] 	      = INCBIN_U8 ("graphics/object_events/pics/people/female_player/oras/icon.4bpp");
 
 const u32 gObjectEventPic_May_ORAS_Normal[]           = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/walking.4bpp");
 const u32 gObjectEventPic_May_ORAS_Running[]          = INCBIN_U32("graphics/object_events/pics/people/female_player/oras/running.4bpp");
@@ -1089,8 +1067,6 @@ const u16 gObjectEventPalette_May_ORAS[]      	      = INCBIN_U16("graphics/obje
 const u32 gTrainerFrontPic_Dawn_PT[]                 = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/front.4bpp.lz");
 const u32 gTrainerPalette_Dawn_PT[]                  = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/front.gbapal.lz");
 const u8  gTrainerBackPic_Dawn_PT[]                  = INCBIN_U8 ("graphics/object_events/pics/people/female_player/pt/back.4bpp"); 
-const u16 gRegionMapPlayerIcon_Dawn_PTPal[]          = INCBIN_U16("graphics/object_events/pics/people/female_player/pt/icon.gbapal");
-const u8  sRegionMapPlayerIcon_Dawn_PTGfx[] 	     = INCBIN_U8 ("graphics/object_events/pics/people/female_player/pt/icon.4bpp");
 
 const u32 gObjectEventPic_Dawn_PT_Normal[]           = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/walking.4bpp");
 const u32 gObjectEventPic_Dawn_PT_Running[]          = INCBIN_U32("graphics/object_events/pics/people/female_player/pt/running.4bpp");
