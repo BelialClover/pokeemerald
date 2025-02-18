@@ -191,9 +191,9 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .name            = COMPOUND_STRING("Platinum"),
         .desc            = COMPOUND_STRING("Platinum Outfit."),
         .trainerPics     = TRAINER_ID(LUCAS, DAWN),
-        .avatarGfxIds    = AVATAR_GFX_ID(LUCAS, DAWN),
+        .avatarGfxIds    = AVATAR_GFX_ID(LUCAS, DAWN_PT),
         .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Lucas, Dawn),
+        .iconsRM         = REGION_MAP_GFX(Lucas, Dawn_PT),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_GSC] = {
