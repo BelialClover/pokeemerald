@@ -593,8 +593,6 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
     {gObjectEventPal_HoOh,                  OBJ_EVENT_PAL_TAG_HO_OH},
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
-    {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
-    {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_CastformSunny,         OBJ_EVENT_PAL_TAG_CASTFORM_SUNNY},
     {gObjectEventPal_CastformRainy,         OBJ_EVENT_PAL_TAG_CASTFORM_RAINY},
     {gObjectEventPal_CastformSnowy,         OBJ_EVENT_PAL_TAG_CASTFORM_SNOWY},
@@ -658,6 +656,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Brendan_ORAS,       OBJ_EVENT_PAL_TAG_BRENDAN_ORAS},
     {gObjectEventPalette_May_ORAS,           OBJ_EVENT_PAL_TAG_MAY_ORAS},
     {gObjectEventPalette_Dawn_PT,            OBJ_EVENT_PAL_TAG_DAWN_PT},
+    {gObjectEventPalette_Brendan_RS,         OBJ_EVENT_PAL_TAG_RS_BRENDAN},
+    {gObjectEventPalette_May_RS,             OBJ_EVENT_PAL_TAG_RS_MAY},
 
     #endif
     {gObjectEventPal_Substitute, OBJ_EVENT_PAL_TAG_SUBSTITUTE},

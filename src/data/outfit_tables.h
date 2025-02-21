@@ -55,6 +55,9 @@ const u16 sRegionMapPlayerIcon_Dawn_PTGfx[] 	      = INCBIN_U16("graphics/object
 
 //! TODO: Should the gfx here be seperated?
 
+static const u8 sFrontierPassPlayerIcons_Unused[]         = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
+const u16 sRegionMapPlayerIcon_UnusedGfx[] 	              = INCBIN_U16("graphics/object_events/pics/people/female_player/pt/icon.4bpp");
+
 static const u8 sFrontierPassPlayerIcons_BrendanMay_Gfx[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
 
 static const u8 sFrontierPassPlayerIcons_RSBrendanMay_Gfx[] = INCBIN_U8("graphics/frontier_pass/rs_map_heads.4bpp");
@@ -103,27 +106,19 @@ static const u8 sFrontierPassPlayerIcons_RSBrendanMay_Gfx[] = INCBIN_U8("graphic
 // bandaids to avoid adding unnecessary merge conflicts
 // remove these if you have them added/renamed yourself.
 #define TRAINER_PIC_RUBY_SAPPHIRE_BRENDAN TRAINER_PIC_RS_BRENDAN
-#define TRAINER_PIC_RUBY_SAPPHIRE_MAY TRAINER_PIC_RS_MAY
+#define TRAINER_PIC_RUBY_SAPPHIRE_MAY     TRAINER_PIC_RS_MAY
 
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_NORMAL     OBJ_EVENT_GFX_LINK_RS_BRENDAN
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_ACRO_BIKE  OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_SURFING    OBJ_EVENT_GFX_BRENDAN_SURFING
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_UNDERWATER OBJ_EVENT_GFX_BRENDAN_UNDERWATER
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_FIELD_MOVE OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_FISHING    OBJ_EVENT_GFX_BRENDAN_FISHING
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_WATERING   OBJ_EVENT_GFX_BRENDAN_WATERING
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_DECORATING OBJ_EVENT_GFX_BRENDAN_DECORATING
-#define OBJ_EVENT_GFX_OUTFIT_RS_BRENDAN_FIELD_MOVE OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
-
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_NORMAL     OBJ_EVENT_GFX_LINK_RS_MAY
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_ACRO_BIKE  OBJ_EVENT_GFX_MAY_ACRO_BIKE
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_SURFING    OBJ_EVENT_GFX_MAY_SURFING
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_UNDERWATER OBJ_EVENT_GFX_MAY_UNDERWATER
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_FIELD_MOVE OBJ_EVENT_GFX_MAY_FIELD_MOVE
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_FISHING    OBJ_EVENT_GFX_MAY_FISHING
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_WATERING   OBJ_EVENT_GFX_MAY_WATERING
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_DECORATING OBJ_EVENT_GFX_MAY_DECORATING
-#define OBJ_EVENT_GFX_OUTFIT_RS_MAY_FIELD_MOVE OBJ_EVENT_GFX_MAY_FIELD_MOVE
+#define TRAINER_PIC_UNUSED              TRAINER_PIC_BRENDAN
+#define TRAINER_BACK_PIC_UNUSED         TRAINER_BACK_PIC_BRENDAN
+#define OBJ_EVENT_GFX_UNUSED_NORMAL     OBJ_EVENT_GFX_BRENDAN_NORMAL
+#define OBJ_EVENT_GFX_UNUSED_ACRO_BIKE  OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE
+#define OBJ_EVENT_GFX_UNUSED_SURFING    OBJ_EVENT_GFX_BRENDAN_SURFING
+#define OBJ_EVENT_GFX_UNUSED_UNDERWATER OBJ_EVENT_GFX_BRENDAN_UNDERWATER
+#define OBJ_EVENT_GFX_UNUSED_FIELD_MOVE OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
+#define OBJ_EVENT_GFX_UNUSED_FISHING    OBJ_EVENT_GFX_BRENDAN_FISHING
+#define OBJ_EVENT_GFX_UNUSED_WATERING   OBJ_EVENT_GFX_BRENDAN_WATERING
+#define OBJ_EVENT_GFX_UNUSED_DECORATING OBJ_EVENT_GFX_BRENDAN_DECORATING
+#define OBJ_EVENT_GFX_UNUSED_FIELD_MOVE OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
 
 /*
 List of Lacking Stuff
@@ -146,10 +141,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("Emerald"),
         .desc            = COMPOUND_STRING("Emerald Outfit."),
-        .trainerPics     = TRAINER_ID(BRENDAN, MAY),
-        .avatarGfxIds    = AVATAR_GFX_ID(BRENDAN, MAY),
-        .animGfxIds      = ANIM_GFX_ID(BRENDAN, MAY),
-        .iconsRM         = REGION_MAP_GFX(Brendan, May),
+        .trainerPics     = TRAINER_ID     (BRENDAN, MAY),
+        .avatarGfxIds    = AVATAR_GFX_ID  (BRENDAN, MAY),
+        .animGfxIds      = ANIM_GFX_ID    (BRENDAN, MAY),
+        .iconsRM         = REGION_MAP_GFX (Brendan, May),
         .iconsFP         = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     },
     [OUTFIT_RS] = {
@@ -157,10 +152,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("RS"),
         .desc            = COMPOUND_STRING("Ruby\nand Sapphire\nOutfit."),
-        .trainerPics     = TRAINER_ID(RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY),
-        .avatarGfxIds    = AVATAR_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(RSBrendan, RSMay),
+        .trainerPics     = TRAINER_ID     (RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY),
+        .avatarGfxIds    = AVATAR_GFX_ID  (BRENDAN_RS, MAY_RS),
+        .animGfxIds      = ANIM_GFX_ID    (BRENDAN_RS, MAY_RS),
+        .iconsRM         = REGION_MAP_GFX (RSBrendan,  RSMay),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_FRLG] = {
@@ -168,10 +163,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("FRLG"),
         .desc            = COMPOUND_STRING("Fire Red\nand Leaf Green\nOutfit."),
-        .trainerPics     = TRAINER_ID(RED, LEAF),
-        .avatarGfxIds    = AVATAR_GFX_ID(RED, LEAF),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Red, Leaf),
+        .trainerPics     = TRAINER_ID     (RED,     LEAF),
+        .avatarGfxIds    = AVATAR_GFX_ID  (RED,     LEAF),
+        .animGfxIds      = ANIM_GFX_ID    (RED,     LEAF),
+        .iconsRM         = REGION_MAP_GFX (Red,     Leaf),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_RBY] = {
@@ -179,10 +174,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("RBY"),
         .desc            = COMPOUND_STRING("Red, Blue and\nYellow Outfit."),
-        .trainerPics     = TRAINER_ID(RED_RBY, BLUE),
-        .avatarGfxIds    = AVATAR_GFX_ID(RED_RBY, BLUE),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Red_RBY, RSMay),
+        .trainerPics     = TRAINER_ID     (RED_RBY, BLUE),
+        .avatarGfxIds    = AVATAR_GFX_ID  (RED_RBY, BLUE),
+        .animGfxIds      = ANIM_GFX_ID    (RED_RBY, BLUE),
+        .iconsRM         = REGION_MAP_GFX (Red_RBY, Blue),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_PT] = {
@@ -190,10 +185,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("Platinum"),
         .desc            = COMPOUND_STRING("Platinum Outfit."),
-        .trainerPics     = TRAINER_ID(LUCAS, DAWN),
-        .avatarGfxIds    = AVATAR_GFX_ID(LUCAS, DAWN_PT),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Lucas, Dawn_PT),
+        .trainerPics     = TRAINER_ID     (LUCAS, DAWN),//
+        .avatarGfxIds    = AVATAR_GFX_ID  (LUCAS, DAWN_PT),
+        .animGfxIds      = ANIM_GFX_ID    (LUCAS, DAWN_PT),
+        .iconsRM         = REGION_MAP_GFX (Lucas, Dawn_PT),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_GSC] = {
@@ -201,10 +196,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("GSC"),
         .desc            = COMPOUND_STRING("Gold and Silver\nOutfit."),
-        .trainerPics     = TRAINER_ID(ETHAN, DAWN),
-        .avatarGfxIds    = AVATAR_GFX_ID(ETHAN, DAWN),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Ethan, Dawn),
+        .trainerPics     = TRAINER_ID     (ETHAN, UNUSED),
+        .avatarGfxIds    = AVATAR_GFX_ID  (ETHAN, UNUSED),
+        .animGfxIds      = ANIM_GFX_ID    (ETHAN, UNUSED),
+        .iconsRM         = REGION_MAP_GFX (Ethan, Unused),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
         .hiddenForFemale = TRUE,
     },
@@ -213,10 +208,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("BW"),
         .desc            = COMPOUND_STRING("Black and White\nOutfit."),
-        .trainerPics     = TRAINER_ID(HILBERT, DAWN),
-        .avatarGfxIds    = AVATAR_GFX_ID(HILBERT, DAWN),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Hilbert, Dawn),
+        .trainerPics     = TRAINER_ID     (HILBERT, UNUSED),
+        .avatarGfxIds    = AVATAR_GFX_ID  (HILBERT, UNUSED),
+        .animGfxIds      = ANIM_GFX_ID    (HILBERT, UNUSED),
+        .iconsRM         = REGION_MAP_GFX (Hilbert, Unused),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
         .hiddenForFemale = TRUE,
     },
@@ -225,10 +220,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("ORAS"),
         .desc            = COMPOUND_STRING("Omega Ruby and\nAlpha Sapphire\nOutfit."),
-        .trainerPics     = TRAINER_ID(RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY), //ToDo
-        .avatarGfxIds    = AVATAR_GFX_ID(BRENDAN_ORAS, MAY_ORAS),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Brendan_ORAS, May_ORAS),
+        .trainerPics     = TRAINER_ID     (RUBY_SAPPHIRE_BRENDAN, RUBY_SAPPHIRE_MAY), //ToDo
+        .avatarGfxIds    = AVATAR_GFX_ID  (BRENDAN_ORAS, MAY_ORAS),
+        .animGfxIds      = ANIM_GFX_ID    (BRENDAN_ORAS, MAY_ORAS),
+        .iconsRM         = REGION_MAP_GFX (Brendan_ORAS, May_ORAS),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
     [OUTFIT_MISC] = {
@@ -236,10 +231,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("FRLG Rival"),
         .desc            = COMPOUND_STRING("FRLG Green\nOutfit."),
-        .trainerPics     = TRAINER_ID(GREEN, GREEN),
-        .avatarGfxIds    = AVATAR_GFX_ID(GREEN, GREEN),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Green, Green),
+        .trainerPics     = TRAINER_ID     (GREEN, UNUSED),
+        .avatarGfxIds    = AVATAR_GFX_ID  (GREEN, UNUSED),
+        .animGfxIds      = ANIM_GFX_ID    (GREEN, UNUSED),
+        .iconsRM         = REGION_MAP_GFX (Green, Unused),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
         .hiddenForFemale = TRUE,
     },
@@ -248,10 +243,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .prices          = { 0, 0 },
         .name            = COMPOUND_STRING("DP Outfit"),
         .desc            = COMPOUND_STRING("Diamond and\nPearl Outfit."),
-        .trainerPics     = TRAINER_ID(LUCAS, DAWN),
-        .avatarGfxIds    = AVATAR_GFX_ID(LUCAS, DAWN),
-        .animGfxIds      = ANIM_GFX_ID(OUTFIT_RS_BRENDAN, OUTFIT_RS_MAY),
-        .iconsRM         = REGION_MAP_GFX(Lucas, Dawn),
+        .trainerPics     = TRAINER_ID     (UNUSED, DAWN),
+        .avatarGfxIds    = AVATAR_GFX_ID  (UNUSED, DAWN),
+        .animGfxIds      = ANIM_GFX_ID    (UNUSED, DAWN),
+        .iconsRM         = REGION_MAP_GFX (Unused, Dawn),
         .iconsFP         = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
         .hiddenForMale   = TRUE,
     },

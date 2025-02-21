@@ -245,14 +245,14 @@ static const u16 sRivalAvatarGfxIds[][2] =
 
 static const u8 sFRLGAvatarGfxIds[GENDER_COUNT] =
 {
-    [MALE]   = OBJ_EVENT_GFX_RED,
-    [FEMALE] = OBJ_EVENT_GFX_LEAF
+    [MALE]   = OBJ_EVENT_GFX_RED_NORMAL,
+    [FEMALE] = OBJ_EVENT_GFX_LEAF_NORMAL
 };
 
 static const u16 sRSAvatarGfxIds[GENDER_COUNT] =
 {
-    [MALE]   = OBJ_EVENT_GFX_LINK_RS_BRENDAN,
-    [FEMALE] = OBJ_EVENT_GFX_LINK_RS_MAY
+    [MALE]   = OBJ_EVENT_GFX_BRENDAN_RS_NORMAL,
+    [FEMALE] = OBJ_EVENT_GFX_MAY_RS_NORMAL
 };
 
 static const u16 sPlayerAvatarGfxToStateFlag[4] =
