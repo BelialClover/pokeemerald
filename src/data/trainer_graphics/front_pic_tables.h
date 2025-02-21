@@ -93,6 +93,8 @@ const struct MonCoords gTrainerFrontPicCoords[] =
     [TRAINER_PIC_LEAF] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_BRENDAN] = {.size = 8, .y_offset = 1},
     [TRAINER_PIC_RS_MAY] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_BRENDAN_ORAS] = {.size = 8, .y_offset = 1},
+    [TRAINER_PIC_MAY_ORAS] = {.size = 8, .y_offset = 1},
 };
 
 #define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
@@ -193,13 +195,15 @@ const struct CompressedSpriteSheet gTrainerFrontPicTable[] =
     TRAINER_SPRITE(RS_BRENDAN, gTrainerFrontPic_RubySapphireBrendan, TRAINER_PIC_SIZE),
     TRAINER_SPRITE(RS_MAY, gTrainerFrontPic_RubySapphireMay, TRAINER_PIC_SIZE),
 
-    TRAINER_SPRITE(RED_RBY, gTrainerFrontPic_Red_RBY, TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(BLUE,    gTrainerFrontPic_Blue,    TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(GREEN,   gTrainerFrontPic_Green,   TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(ETHAN,   gTrainerFrontPic_Ethan,   TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(LUCAS,   gTrainerFrontPic_Lucas,   TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(HILBERT, gTrainerFrontPic_Hilbert, TRAINER_PIC_SIZE),
-    TRAINER_SPRITE(DAWN,    gTrainerFrontPic_Dawn,    TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(RED_RBY,      gTrainerFrontPic_Red_RBY,      TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(BLUE,         gTrainerFrontPic_Blue,         TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(GREEN,        gTrainerFrontPic_Green,        TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(ETHAN,        gTrainerFrontPic_Ethan,        TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(LUCAS,        gTrainerFrontPic_Lucas,        TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(HILBERT,      gTrainerFrontPic_Hilbert,      TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(DAWN,         gTrainerFrontPic_Dawn,         TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(BRENDAN_ORAS, gTrainerFrontPic_Brendan_ORAS, TRAINER_PIC_SIZE),
+    TRAINER_SPRITE(MAY_ORAS,     gTrainerFrontPic_May_ORAS,     TRAINER_PIC_SIZE),
 };
 
 #define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
@@ -300,11 +304,13 @@ const struct CompressedSpritePalette gTrainerFrontPicPaletteTable[] =
     TRAINER_PAL(RS_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_PAL(RS_MAY, gTrainerPalette_RubySapphireMay),
 
-    TRAINER_PAL(RED_RBY, gTrainerPalette_Red_RBY),
-    TRAINER_PAL(BLUE,    gTrainerPalette_Blue),
-    TRAINER_PAL(GREEN,   gTrainerPalette_Green),
-    TRAINER_PAL(ETHAN,   gTrainerPalette_Ethan),
-    TRAINER_PAL(LUCAS,   gTrainerPalette_Lucas),
-    TRAINER_PAL(HILBERT, gTrainerPalette_Hilbert),
-    TRAINER_PAL(DAWN,    gTrainerPalette_Dawn),
+    TRAINER_PAL(RED_RBY,      gTrainerPalette_Red_RBY),
+    TRAINER_PAL(BLUE,         gTrainerPalette_Blue),
+    TRAINER_PAL(GREEN,        gTrainerPalette_Green),
+    TRAINER_PAL(ETHAN,        gTrainerPalette_Ethan),
+    TRAINER_PAL(LUCAS,        gTrainerPalette_Lucas),
+    TRAINER_PAL(HILBERT,      gTrainerPalette_Hilbert),
+    TRAINER_PAL(DAWN,         gTrainerPalette_Dawn),
+    TRAINER_PAL(BRENDAN_ORAS, gTrainerPalette_Brendan_ORAS),
+    TRAINER_PAL(MAY_ORAS,     gTrainerPalette_May_ORAS),
 };
