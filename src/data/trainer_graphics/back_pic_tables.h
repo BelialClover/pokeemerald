@@ -9,15 +9,16 @@ const struct MonCoords gTrainerBackPicCoords[] =
     [TRAINER_BACK_PIC_WALLY] = {.size = 8, .y_offset = 4},
     [TRAINER_BACK_PIC_STEVEN] = {.size = 8, .y_offset = 4},
 
-    [TRAINER_BACK_PIC_RED_RBY] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_BLUE] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_GREEN] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_ETHAN] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_LUCAS] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_HILBERT] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_DAWN] = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_RED_RBY]      = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_BLUE]         = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_GREEN]        = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_ETHAN]        = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_LUCAS]        = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_HILBERT]      = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_DAWN]         = {.size = 8, .y_offset = 4},
     [TRAINER_BACK_PIC_BRENDAN_ORAS] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_MAY_ORAS] = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_MAY_ORAS]     = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_DAWN_PT]      = {.size = 8, .y_offset = 4},
 };
 
 // this table goes functionally unused, since none of these pics are compressed
@@ -103,12 +104,17 @@ const struct CompressedSpriteSheet gTrainerBackPicTable[] =
     [TRAINER_BACK_PIC_BRENDAN_ORAS] = {
         .data = (const u32 *)gTrainerBackPic_Hilbert,
         .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Brendan_ORAS),
-        .tag = TRAINER_BACK_PIC_HILBERT,
+        .tag = TRAINER_BACK_PIC_BRENDAN_ORAS,
     },
     [TRAINER_BACK_PIC_MAY_ORAS] = {
-        .data = (const u32 *)gTrainerBackPic_Dawn,
+        .data = (const u32 *)gTrainerBackPic_May_ORAS,
         .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_May_ORAS),
-        .tag = TRAINER_BACK_PIC_DAWN,
+        .tag = TRAINER_BACK_PIC_MAY_ORAS,
+    },
+    [TRAINER_BACK_PIC_DAWN_PT] = {
+        .data = (const u32 *)gTrainerBackPic_Dawn_PT,
+        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Dawn_PT),
+        .tag = TRAINER_BACK_PIC_DAWN_PT,
     },
 };
 
@@ -134,4 +140,5 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
     TRAINER_BACK_PAL(DAWN, gTrainerPalette_Dawn),
     TRAINER_BACK_PAL(BRENDAN_ORAS, gTrainerPalette_Brendan_ORAS),
     TRAINER_BACK_PAL(MAY_ORAS, gTrainerPalette_May_ORAS),
+    TRAINER_BACK_PAL(DAWN_PT, gTrainerPalette_Dawn_PT),
 };

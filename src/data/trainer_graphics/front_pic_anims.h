@@ -467,4 +467,6 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_RS_MAY] = sAnims_RubySapphireMay,
     [TRAINER_PIC_BRENDAN_ORAS] = sAnims_RubySapphireBrendan,
     [TRAINER_PIC_MAY_ORAS] = sAnims_RubySapphireMay,
+    [TRAINER_PIC_DAWN] = sAnims_RubySapphireMay,
+    [TRAINER_PIC_DAWN_PT] = sAnims_RubySapphireMay,
 };
