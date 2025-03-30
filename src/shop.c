@@ -637,20 +637,22 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
                 ItemId_GetPrice(itemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT),
                 STR_CONV_MODE_LEFT_ALIGN,
                 5);
+            StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
         }
         else if (sMartInfo.martType == MART_TYPE_OUTFIT)
         {
             ConvertIntToDecimalStringN(gStringVar1, GetOutfitPrice(itemId), STR_CONV_MODE_LEFT_ALIGN, 5);
+
+            if (GetOutfitStatus(itemId))
+                StringCopy(gStringVar4, gText_SoldOut);
+            else
+                StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
         }
         else
         {
             ConvertIntToDecimalStringN(gStringVar1, gDecorations[itemId].price, STR_CONV_MODE_LEFT_ALIGN, 5);
-        }
-
-        if (GetOutfitStatus(itemId))
-            StringCopy(gStringVar4, gText_SoldOut);
-        else
             StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
+        }
 
         x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
         AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
@@ -1025,7 +1027,7 @@ static void Task_BuyMenu(u8 taskId)
             else
                 sShopData->totalCost = gDecorations[itemId].price;
 
-            if (GetOutfitStatus(itemId))
+            if ((sMartInfo.martType == MART_TYPE_OUTFIT) && GetOutfitStatus(itemId))
                 BuyMenuDisplayMessage(taskId, gText_ThatOutfitIsSoldOut, BuyMenuReturnToItemList);
             else if (!IsEnoughMoney(&gSaveBlock1Ptr->money, sShopData->totalCost))
             {
